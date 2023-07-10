@@ -23,7 +23,7 @@
 
     .nav-container,
     .address-container {
-        display: block;
+        display: flex;
     }
 
     .nav-list {
