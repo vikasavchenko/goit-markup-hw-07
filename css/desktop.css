@@ -66,6 +66,9 @@
 
 
     /* Team */
+    .section-team {
+        padding: 120px 0;
+    }
     .team-list {
         flex-wrap: nowrap;
     }
