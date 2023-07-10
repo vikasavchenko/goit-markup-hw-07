@@ -1,0 +1,15 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+
+    .section-title .title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.07rem;
+        text-align: center;
+        color: var(--white, #FFF);
+        margin: 0 auto 48px auto;
+    }
+}
