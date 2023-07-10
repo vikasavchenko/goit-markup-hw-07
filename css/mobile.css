@@ -421,7 +421,7 @@ footer .logo-text {
 
     .modal-menu .nav-container,
     .modal-menu .address-container {
-        display: block;
+        display: flex;
     }
 
     .section-title {
