@@ -404,10 +404,7 @@ footer .logo-text {
     fill: var(--white);
 }
 
-@media screen and (min-width: 428px) {
-    .container {
-        width: 428px;
-    }
+
 
     .header-container {
         height: 70px;
@@ -571,4 +568,9 @@ footer .logo-text {
     .footer-form-btn {
         max-width: 165px;
     }
+    @media screen and (min-width: 428px) {
+        .container {
+            width: 428px;
+        }
 }
+
