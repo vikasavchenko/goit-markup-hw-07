@@ -1,15 +1,140 @@
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+        padding: 0 108px;
+    }
+
+    .header .container,
+    .section-features .container {
+        padding: 0 16px;
+    }
+
+    .modal-menu {
+        display: none;
+    }
+
+    .menu-hamburger-button {
+        display: none;
+    }
+
+    .header-container {
+        height: 72px;
+    }
+
+    .nav-container,
+    .address-container {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-item a,
+    .address-item a {
+        display: block;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+
+        font-weight: 500;
+        color: var(--navyblue);
+        padding: 24px 0;
+    }
+
+    .address-item a {
+        font-size: 12px;
+        line-height: .875rem;
+        letter-spacing: .03rem;
     }
 
     .section-title .title {
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
         letter-spacing: 0.07rem;
-        text-align: center;
-        color: var(--white, #FFF);
-        margin: 0 auto 48px auto;
+        text-transform: none;
+        max-width: 31rem;
+    }
+
+
+    /* Features */
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .feature-title {
+        text-align: left;
+    }
+
+
+    /* Team */
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+
+
+    /* Customers */
+    .customers-icons-list {
+        gap: 72px 24px;
+    }
+
+    .customers-icons-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    
+    /* Footer */
+    .footer-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 72px 24px;
+    }
+
+    .footer-info {
+        align-items: baseline;
+    }
+
+    .footer .footer-info,
+    .footer .footer-social-links {
+        flex: 0 0 calc((100% - 24px) / 2);
+        min-width: 0;
+    }
+
+    .footer .footer-form {
+        flex: 0 0 100%;
+    }
+
+    .footer-social-links-title,
+    .footer-form-title {
+        text-align: left;
+    }
+
+    .footer-form-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-form-item {
+        flex: 0 0 50%;
     }
 }

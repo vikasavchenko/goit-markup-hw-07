@@ -1,143 +1,41 @@
+/* Overlay */
 
-
-
-
-
-
-
-.form-text {
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--navyblue);
-    margin-bottom: 16px;
-}
-
-.modal-form-wrap {
-    margin-bottom: 8px;
-}
-
-.modal-form-label {
-    display: block;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--light-slate);
-    margin-bottom: 4px;
-}
-
-.modal-form-container {
-    position: relative;
-}
-
-
-
-.modal-form-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding-left: 38px;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.modal-form-input:focus {
-    border-color: var(--iris);
-}
-
-.modal-form-input:focus+.modal-form-icon {
-    fill: var(--iris);
-}
-
-.modal-form-icon {
+.overlay {
     position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
 
-.form-field-comment {
-    margin-bottom: 16px;
-}
-
-.modal-form-textarea {
     width: 100%;
-    height: 120px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 8px 16px;
-    outline: transparent;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-textarea::placeholder {
-    color: inherit;
-}
-
-.modal-form-textarea:focus {
-    border-color: var(--iris);
-}
-
-.form-field-checkbox {
-    margin-bottom: 24px;
-    user-select: none;
-}
-
-.fake-icon-checkbox {
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--navyblue-modal);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
-    margin-right: 8px;
-}
-
-.modal-form-checkbox:checked + label .fake-icon-checkbox  {
-    background-color: var(--ocean);
-    border: none;
-    fill: var(--cloud);
-}
-
-.privacy-link {
-    color: var(--iris);
-}
-
-.modal-send {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    cursor: pointer;
     background-color: var(--iris);
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 auto;
+
+    transition: transform 250ms;
 }
+
+.overlay-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    padding: 40px 32px;
+    color: var(--cloud);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay,
+.project-link:hover .overlay-text,
+.project-link:focus .overlay-text {
+    transform: translateY(0%);
+}
+
 
 /* Project Page */
-
 .filter-button {
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -237,40 +135,4 @@
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
     border-top: none;
-}
-
-/* Overlay */
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--iris);
-
-    transition: transform 250ms;
-}
-
-.project-link:hover .overlay,
-.project-link:focus .overlay,
-.project-link:hover .overlay-text,
-.project-link:focus .overlay-text {
-    transform: translateY(0%);
-}
-
-.overlay-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-
-    padding: 40px 32px;
-    color: var(--cloud);
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
