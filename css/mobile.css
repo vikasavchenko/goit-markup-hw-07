@@ -78,6 +78,10 @@ footer .logo-text {
     color: var(--slate);
     text-decoration: none;
 }
+.nav-item a,
+.address-item a {
+    margin-bottom: 40px;
+}
 
 .nav-item a:hover,
 .nav-item a:focus,

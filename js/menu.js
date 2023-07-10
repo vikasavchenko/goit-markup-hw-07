@@ -4,7 +4,7 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const disableBodyScroll = () => document.body.style.overflow = 'hidden';
-  const enableBodyScroll = () => document.body.style.overflow = ''; 
+  const enableBodyScroll = () => document.body.style.overflow = 'unset'; 
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -12,7 +12,7 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-hidden');
    
-    disableBodyScroll();
+    isMenuOpen ? enableBodyScroll() : disableBodyScroll();
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
